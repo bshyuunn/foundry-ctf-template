@@ -1,4 +1,6 @@
 # foundry-ctf-template
+This template is developed based on the example provided in [Zellic's example-ctf-challenge](https://github.com/Zellic/example-ctf-challenge).
+
 
 ## Getting Started
 ```
