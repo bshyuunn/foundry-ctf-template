@@ -34,10 +34,12 @@ services:
    The secret value participants need to find.
 
 2. **`PORT`**  
-   The port for service communication (default: `31337`).
+   The port for service communication (default: `31337`) (If changed, also update `docker-compose.yml` under `ports: - "31337:31337"`).
 
 3. **`HTTP_PORT`**  
-   The port for RPC communication with the Ethereum node (default: `8545`).
+   The port for RPC communication with the Ethereum node (default: `8545`). 
+   
+   If changed, also update `docker-compose.yml` under `ports: - "8545:8545"`.
 
 4. **`PUBLIC_IP`**  
    The public IP for hosting the service (set to `localhost` for local development).
