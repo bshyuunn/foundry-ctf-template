@@ -1,1 +1,1 @@
-# solidity-ctf-template
+# foundry-ctf-template
