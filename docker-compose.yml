@@ -11,7 +11,6 @@ services:
       - HTTP_PORT=8545
       - PUBLIC_IP=localhost
       - SHARED_SECRET=47066539167276956766098200939677720952863069100758808950316570929135279551683
-      - ENV=production
       - SETUP_CONTRACT_VALUE=0
       - USER_VALUE=10000000000000
       - EVM_VERSION=cancun # `cancun`, `shanghai`, `paris`, `london`, etc...
