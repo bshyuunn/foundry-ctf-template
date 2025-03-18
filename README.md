@@ -9,7 +9,11 @@ $ nc localhost 31337
 ```
 
 ## Creating Your Own Challenge
-To set up the environment for your challenge, simply modify the `docker-compose.yml` file. Change `simple-challenge:` to the name of your challenge and adjust other values in the file to fit your challenge's environment.
+First, place your custom challenge files in the `src/` directory. The `Setup.col` file is essential, and you also need to implement the `isSolved` function to check if the challenge has been solved. Other environment setup tasks should be handled in the constructor. 
+
+Additionally, you can write a script to solve the challenge in the `script/` directory, and you can add test code for your challenge in the `test/` directory.
+
+Next, to configure the environment for your challenge, modify the `docker-compose.yml` file. Change `simple-challenge:` to the name of your challenge and adjust other values in the file to fit your challenge's environment.
 ```yml
 services:
   simple-challenge:
