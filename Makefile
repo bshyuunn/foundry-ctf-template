@@ -1,15 +1,15 @@
-all: install build-contracts start-challenge-server
+all: install-foundry build-contracts start-challenge-server
 
-install:
-	git submodule update --init --recursive
+install-foundry:
+	git submodule update --remote lib/forge-std
 
-start-challenge-server: install build-contracts
+start-challenge-server: install-foundry build-contracts
 	docker compose up --build -d
 
 stop-challenge-server:
 	docker-compose down
 
-build-contracts: install
+build-contracts: install-foundry
 	 forge build
 
 clean:
