@@ -9,7 +9,7 @@ $ nc localhost 31337
 ```
 
 ## Creating Your Own Challenge
-To set up the environment for your challenge, simply modify the `docker-compose.yml` file. If you need to change the EVM version, make sure to update the `foundry.toml` file as well.
+To set up the environment for your challenge, simply modify the `docker-compose.yml` file. Change `simple-challenge:` to the name of your challenge and adjust other values in the file to fit your challenge's environment.
 ```yml
 services:
   simple-challenge:
