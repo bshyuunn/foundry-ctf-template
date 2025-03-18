@@ -54,12 +54,9 @@ services:
 8. **`EVM_VERSION`**  
    The Ethereum version to use (`cancun`, `shanghai`, `paris`, etc.).
 
-Additionally, when changing the `EVM_VERSION`, make sure to update the `foundry.toml` file as well:
-
+Additionally, when changing the `EVM_VERSION`, make sure to properly set the desired version in the `foundry.toml` file as well:
 ```toml
 [profile.default]
 
-...
-
-evm_version = "cancun"  # Options include `cancun`, `shanghai`, `paris`, `london`, etc.
+evm_version = "cancun"  # Set to your desired version, such as `cancun`, `shanghai`, `paris`, `london`, etc.
 ```
