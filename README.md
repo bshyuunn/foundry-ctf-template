@@ -1,5 +1,5 @@
 # foundry-ctf-template
-This template is developed based on the example provided in [Zellic's example-ctf-challenge](https://github.com/Zellic/example-ctf-challenge).
+This template is based on [Zellic's example-ctf-challenge](https://github.com/Zellic/example-ctf-challenge), which was updated by [minaminao](https://github.com/minaminao/tokyo-payload?tab=readme-ov-file), and further enhanced to streamline the process of developing challenges using this template.
 
 
 ## Getting Started
