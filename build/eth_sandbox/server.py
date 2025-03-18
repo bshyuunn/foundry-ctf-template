@@ -19,7 +19,7 @@ CORS(app)
 
 ENV = os.getenv("ENV", "production")
 HTTP_PORT = os.getenv("HTTP_PORT", "8545")
-HARDFORK = os.getenv("HARDFORK", "cancun")
+EVM_VERSION = os.getenv("EVM_VERSION", "cancun")
 
 try:
     os.mkdir("/tmp/instances-by-uuid")
@@ -81,7 +81,7 @@ def launch_node() -> dict | None:
         "--block-base-fee-per-gas",
         "0",
         "--hardfork",
-        HARDFORK,
+        EVM_VERSION,
     ]
 
     print(anvil_command)
