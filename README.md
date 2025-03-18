@@ -1,1 +1,1 @@
-# evm-challenge-maker
+# solidity-ctf-template
