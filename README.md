@@ -18,7 +18,7 @@ Additionally, you can write a script to solve the challenge in the `script/` dir
 Next, to configure the environment for your challenge, modify the `docker-compose.yml` file. Change `simple-challenge:` to the name of your challenge and adjust other values in the file to fit your challenge's environment.
 ```yml
 services:
-  simple-challenge: # Change this to the name of your challenge
+  simple-challenge:
     build: ./build
     ports:
       - "31337:31337"
@@ -30,7 +30,6 @@ services:
       - HTTP_PORT=8545
       - PUBLIC_IP=localhost
       - SHARED_SECRET=47066539167276956766098200939677720952863069100758808950316570929135279551683
-      - ENV=production
       - SETUP_CONTRACT_VALUE=0
       - USER_VALUE=10000000000000
       - EVM_VERSION=cancun # `cancun`, `shanghai`, `paris`, `london`, etc...
