@@ -6,8 +6,14 @@ This template is based on [Zellic's example-ctf-challenge](https://github.com/Ze
 ```
 $ forge init --template bshyuunn/foundry-ctf-template my-solidity-challenge
 $ cd my-solidity-challenge
-$ make
+$ make all
+```
+```
 $ nc localhost 31337
+1 - launch new instance
+2 - kill instance
+3 - get flag (if isSolved() is true)
+action? 
 ```
 
 ## Creating Your Own Challenge
